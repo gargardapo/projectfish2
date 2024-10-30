@@ -8,7 +8,7 @@ const PORT = process.env.PORT || 3000; // Use Render's PORT environment variable
 
 // Middleware to parse form data
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('public')); // Serve static files from the "public" directory
+app.use(express.static('/')); // Serve static files from the "public" directory
 
 // Route to handle login form submission
 app.post('/submit-login', (req, res) => {
